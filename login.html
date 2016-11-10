@@ -1,0 +1,85 @@
+<!DOCTYPE html5">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="css/fontello.css">
+            <title>login</title>
+            <style>
+                body{
+                    background-color: #333;
+                    background-image: url("http://www.spendeeapp.com/img/bg_intro.png");
+                }
+                .login {
+                    margin: 150px auto 0px;
+                    padding: 30px 8px;
+                    width: 340px;
+                    /*background-color: #E7E7E7;*/
+                    background-color: rgba(197, 197, 197, 0.59);
+                    box-shadow: 1px 2px 4px #626262;
+                    border-radius:2px;
+
+                }
+                .dblocks {
+                    padding: 5px 10px;
+                }
+                .dblocks>lable {
+                    width: 40px;
+                    display: inline-block;
+                    color: #3E3B3B;
+                    padding-left: 10px;
+                }
+                .logbu {
+                    background-color: #5DD232;
+                    color: #FFF;
+                    padding: 5px 30px;
+                    border-radius: 5px;
+                    border: 1px solid #FFF;
+                    margin-left: 10px;
+                }
+                .logbu:hover {
+                    background-color: #F36;
+                }
+                .logbu:active {
+                    background-color: #000;
+                }
+                .tpane {
+                    width: 200px;
+                    height: 20px;
+                    border: 1px solid rgba(9, 138, 173, 0.4);
+                    border-radius: 3px;
+                    padding: 3px;
+                }
+                .rtitle {
+                    font-size: 12px;
+                    font-weight: 500;
+                    margin: 0px;
+                    text-align: center;
+                }
+            </style>
+    </head>
+
+    <body>
+        <h>Exam Mind</h>
+        <div class="login">
+            <h1 class="rtitle">LOGIN</h1>
+            <form action="server/login.php" method="post" >
+                <div class="dblocks">
+                    <lable><i class="icon-user"></i></lable>
+                    <input type="text" name="email" class="tpane" placeholder="username">
+                </div>
+                <div class="dblocks">
+                    <lable><i class="icon-key"></i></lable>
+                    <input type="password" name="password" class="tpane" placeholder="password"/>
+                </div>
+                <div class="dblocks">
+                    <lable><i class="icon-key"></i></lable>
+                    <input type="text" name="phone" class="tpane" placeholder="phone"/>
+                </div>
+                <a href="/account/forget" id="recover"></a>
+                <div class="dblocks">
+                    <input type="submit" value="log in" class="logbu">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
